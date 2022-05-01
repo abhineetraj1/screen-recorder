@@ -1,4 +1,3 @@
-
 # Screen recorder app
 
 This project is made in python3.x
@@ -7,7 +6,7 @@ This project is made in python3.x
 
 First install python3.6 in your respective system
 
-### For linux and macOS
+### For macOS
 
 Open terminal , enter the below code and hit enter
 
@@ -15,6 +14,17 @@ Open terminal , enter the below code and hit enter
 pip3 install pyautgui
 pip3 install opencv-python
 pip3 install numpy
+```
+
+### For linux
+
+Open terminal , enter the below code and hit enter
+
+```
+sudo apt-get install scrot
+sudo pip3 install pyautgui
+sudo pip3 install opencv-python
+sudo pip3 install numpy
 ```
 
 ### For windows
