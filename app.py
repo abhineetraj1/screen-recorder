@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import pyautogui
+import platform
 import shutil
 from tkinter import*
 from tkinter import messagebox
