@@ -4,7 +4,8 @@ This project is made in python3.x
 
 ## Installation guide :-
 
-First install python3.6 in your respective system
+1) First install python3.6 in your respective system
+2) Download this source code
 
 ### For macOS
 
@@ -41,18 +42,16 @@ pip3 install numpy
 
 ### For macOS
 
-1) Open terminal in the respective folder (where you have downloaded the project) write the below code and hit enter
+Open terminal in the respective folder (where you have downloaded the project) write the below code and hit enter
 
 ```python3 app.py```
 
-2) And then open web browser and go to -> http://127.0.0.1:5000
-
 ### For Linux
 
-1) Open terminal in the respective folder (where you have downloaded the project) write the below code and hit enter
+Open terminal in the respective folder (where you have downloaded the project) write the below code and hit enter
 
 ```python3 app.py```
 
 ### For Windows
 
-1) Download this source code and double click on file -> app.py .
+Download this source code and double click on file -> app.py .
