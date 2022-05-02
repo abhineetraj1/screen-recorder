@@ -29,7 +29,7 @@ def rls():
         shutil.rmtree("video")
         os.mkdir("video")
         p3.place(x=150,y=1000)
-        os.startfile(t)
+        messagebox.showinfo("File saved","Your file has been saved")
 
 #checking the presence of cache file in file system
 if ("cache" in k):
@@ -39,11 +39,15 @@ else:
 
 #For start recording, this function writes "" in cache file, due to which the main.py file starts recording the screen
 def ply():
+    if("win" in platform.system()):
+        os.startfile("main.py")
+    elif(platform.system() == "Linux"):
+        os.open("main.py")
+    else:
+        messagebox.showinfo("Problem","This app has no support for "+platform.system())
     open("cache","w").write("")
     p2.place(x=15,y=80)
     p1.place(x=150,y=1000)
-    os.startfile("main.py")
-
 
 #For stop recording, this function writes "stop" in cache file, due to which the main.py file stop recording the screen
 def stp():
@@ -53,7 +57,13 @@ def stp():
     p2.place(x=150,y=1000)
 
 def ghb():
-    webbrowser.open("https://github.com/abhineetraj1")
+    try:
+        webbrowser.open("https://github.com/abhineetraj1")
+    except Exception as ss:
+        try:
+            messagebox.showerror("Error",str(ss))
+        except:
+            messagebox.showerror("Error","Not able to open your default browser, kindly examine your system's default browser!")
 
 Label(t, background="#659bdf", height=3, width=500).place(x=0,y=0)
 Label(t, background="#659bdf", text="Screen recorder",  font=('Comic sans MS', 19)).place(x=10,y=0)
