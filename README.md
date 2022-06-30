@@ -18,6 +18,17 @@ sudo pip3 install opencv-python
 sudo pip3 install numpy
 ```
 
+### For MacOS
+
+Open terminal , execute the below code
+
+```
+pip3 install pyautgui
+pip3 install opencv-python
+pip3 install numpy
+```
+
+
 ### For windows
 
 Open command prompt (search for this, you'll get it) , execute the below code
@@ -31,6 +42,12 @@ pip3 install numpy
 ## Execution
 
 ### For Linux
+
+Open terminal in the respective folder (where you have downloaded the project) write the below code and hit enter
+
+```python3 app.py```
+
+### For MacOS
 
 Open terminal in the respective folder (where you have downloaded the project) write the below code and hit enter
 
