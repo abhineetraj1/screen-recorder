@@ -34,7 +34,7 @@ pip3 install numpy
 Open command prompt (search for this, you'll get it) , execute the below code
 
 ```
-pip3 install pyautgui
+pip3 install pyautogui
 pip3 install opencv-python
 pip3 install numpy
 ```
