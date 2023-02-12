@@ -12,7 +12,7 @@ from tkinter import simpledialog
 import os
 import webbrowser
 
-
+#Main function to record screen
 def record_screen_v():
     SCREEN_SIZE = tuple(pyautogui.size())
     # define the codec
@@ -39,6 +39,7 @@ def record_screen_v():
     cv2.destroyAllWindows()
     out.release()
 
+#This function start the recording
 def rec():
     if ("__cache__" in os.listdir()):
         open("__cache__","w").write("")
@@ -56,9 +57,7 @@ def main_l():
     def rls():
         t = save_as()
         l="output.avi"
-        if (t == None):
-            messagebox.showerror("Error","You need to enter filename")
-        else:
+        if (t != None):
             t = t.name+".avi"
             shutil.copy(l,t)
             p3.place(x=150,y=1000)
@@ -85,9 +84,10 @@ def main_l():
         open("__cache__","w").write("")
         open("cache","w").write("stop")
         p1.place(x=15,y=80)
-        p3.place(x=15,y=150)
+        p3.place(x=15,y=170)
         p2.place(x=150,y=1000)
     
+    #Function to open browser
     def ghb():
         try:
             webbrowser.open("https://github.com/abhineetraj1")
@@ -98,15 +98,15 @@ def main_l():
                 messagebox.showerror("Error","Not able to open your default browser, kindly examine your system's default browser!")
     t= Tk()
     t.title("Screen")
-    t.geometry("220x250")
+    t.geometry("320x280")
     t.resizable(0,0)
-    Label(t, background="#659bdf", height=3, width=500).place(x=0,y=0)
-    Label(t, background="#659bdf", text="Screen recorder",  font=('Comic sans MS', 19)).place(x=10,y=0)
-    Label(t, background="white", height=30, width=500).place(x=0,y=50)
-    p1= Button(t, text="Start recording",font=('Comic sans MS',15) , command=ply, background="#659bdf",foreground="white", activebackground="white", activeforeground="black")
-    p2= Button(t, text="Stop recording", font=('Comic sans MS',15) , command=stp, background="#659bdf",foreground="white", activebackground="white", activeforeground="black")
-    p3= Button(t, text="Release video",  font=('Comic sans MS',15) , command=rls, background="#659bdf",foreground="white", activebackground="white", activeforeground="black")
-    Button(t, text="By Abhineet Raj",  font=('Comic sans MS',13) , command=ghb, background="black",foreground="white", activebackground="white", activeforeground="black").place(x=10,y=210)
+    Label(t, background="#0049e6", height=5, width=500).place(x=0,y=0)
+    Label(t, background="#0049e6", text="Screen recorder", foreground="black" ,font=('Comic sans MS', 19)).place(x=10,y=0)
+    Label(t, background="black", height=30, width=500).place(x=0,y=50)
+    p1= Button(t, text="Start recording",font=('Comic sans MS',15) , command=ply, background="#0049e6",foreground="black", activebackground="white", activeforeground="black")
+    p2= Button(t, text="Stop recording", font=('Comic sans MS',15) , command=stp, background="#0049e6",foreground="black", activebackground="white", activeforeground="black")
+    p3= Button(t, text="Release video",  font=('Comic sans MS',15) , command=rls, background="#0049e6",foreground="black", activebackground="white", activeforeground="black")
+    Button(t, text="By Abhineet Raj",  font=('Comic sans MS',13) , command=ghb, background="grey",foreground="white", activebackground="white", activeforeground="black").place(x=10,y=230)
     p1.place(x=15,y=80)
     p2.place(x=1500,y=1000)
     t.mainloop()
