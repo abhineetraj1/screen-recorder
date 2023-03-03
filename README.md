@@ -56,3 +56,9 @@ Open terminal in the respective folder (where you have downloaded the project) w
 ### For Windows
 
 Download this source code and double click on file -> app.py .
+
+## Languages and tools used:
+<p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+
+## Author
+*	[abhineetraj1](http://github.com/abhineetraj1)
