@@ -1,6 +1,12 @@
 # Screen recorder app
+This is a program that allows you to make a video recording of what is happening on your computer screen.
 
-This project is made in python3.x
+## Features:-
+* Record entire screen.
+* High video quality
+* Save recorded file.
+* Save file in custom location/path.
+* There is no time limit, you can record according to your memory limit.
 
 ## Installation guide :-
 
@@ -41,24 +47,14 @@ pip3 install numpy
 
 ## Execution
 
-### For Linux
+* Open terminal in the respective folder (where you have downloaded the project) write the below code and hit enter
 
-Open terminal in the respective folder (where you have downloaded the project) write the below code and hit enter
-
-```python3 app.py```
-
-### For MacOS
-
-Open terminal in the respective folder (where you have downloaded the project) write the below code and hit enter
-
-```python3 app.py```
-
-### For Windows
-
-Download this source code and double click on file -> app.py .
+```
+python3 app.py
+```
 
 ## Languages and tools used:
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
-## Author
+## Developer
 *	[abhineetraj1](http://github.com/abhineetraj1)
